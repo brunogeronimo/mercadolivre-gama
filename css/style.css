@@ -59,6 +59,10 @@ p{
   margin-right: 6em;
 }
 
+.services h1, h2, h3, h4, h5, h6{
+  color: #66cbd0;
+}
+
 .row{
   margin-right: 0em;
   margin-left: 0em;
