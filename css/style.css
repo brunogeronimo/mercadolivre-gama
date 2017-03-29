@@ -26,7 +26,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 .cut-line{
-  background: #000 url(banner.png) center center no-repeat;
+  background: #000 url("/images/banner.png") center center no-repeat;
   min-height: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -40,8 +40,22 @@ body h1, h2, h3, h4, h5, h6{
   margin: 17% auto;
 }
 
-.meio h1, h3{
+.detailed{
+  padding-left: 12em;
+  padding-right: 12em;
   text-align: center;
+}
+
+.meio h1{
+  text-align: center;
+}
+
+.services h1, h2, h3{
+  text-align: center;
+}
+
+.services p{
+  text-align: justify;
 }
 
 .services .thumbnail{
@@ -50,12 +64,13 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 .cabeca {
-  background: #000 url(banner.png) center center no-repeat;
+  background: #000 url("/images/banner.png") center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
   color: #fff;
 }
+
 .main-content{
   padding-right: 0px;
   padding-left: 0px;
@@ -63,7 +78,24 @@ body h1, h2, h3, h4, h5, h6{
 
 .youTubeVideo{
   width: 100%;
-  height: 20em;
+  height: 40em;
+}
+
+.product-main-title{
+  text-align: center;
+}
+
+.product{
+  min-height: 10em;
+}
+
+.product h3, h4, h5, h6{
+  text-transform: none;
+}
+
+.payment-form{
+  margin: 0;
+  width: 100%;
 }
 
 footer {
@@ -71,11 +103,26 @@ footer {
   color: #FFF;
 }
 
-@media screen and (max-width: 1081px){
+@media screen and (max-width: 1100px){
   .services{
-    margin-right: 0em;
+    margin-right: 5em;
   }
 }
+
+@media (max-width: 901px){
+  .detailed{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (max-width: 542px){
+  .detailed{
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+}
+
 /*Status Page Style*/
 .img-status {
   float: left;
