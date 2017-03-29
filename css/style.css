@@ -122,3 +122,13 @@ footer {
     padding-right: 0em;
   }
 }
+
+/*Status Page Style*/
+.img-status {
+  float: left;
+  width: 400px;
+  margin: 20px;
+}
+.thumbnail img {
+  width: 300px;
+}
