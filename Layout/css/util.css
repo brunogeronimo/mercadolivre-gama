@@ -1,0 +1,307 @@
+/*********** BEGIN - header E footer ***********/
+.logo{
+    float: left;
+}
+.logo img{
+    height: 20px;
+    width: 200px;
+}
+.rodape p {
+    margin: 0px;
+    float: right;
+}
+/*********** END - header E footer  ***********/
+
+/*********** BEGIN - FAB  ***********/
+.container {
+  bottom: 0;
+  position: fixed;
+  margin: 1em;
+  right: 0px;
+}
+.fab {
+	border:none;
+    font-size: 30px;
+    font-weight: normal;
+    color:white;
+    background-color: #FF4D4D;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+       -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+            box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+}
+/*********** END - FAB ***********/
+
+/*********** BEGIN - Geral ***********/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8E929D;
+    margin: 0px;
+}
+.menu ul li ,.descricao,.logohtml,.tecnologia,.bannerhtml{ 
+    display: inline-block; 
+}
+.menu,.rodape{
+    padding: 20px 200px 40px 200px;
+    background-color: #1B2026;
+}
+button {
+    font-size: 14px;
+    font-weight: bold;
+    width: 90px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    color: white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 30px;
+    border-color: white;
+    border-style: solid;
+}
+/*********** BEGIN - Geral ***********/
+
+/*********** BEGIN - DIV SOBRE ***********/
+.sobre{
+ 
+    text-align: center;
+}
+.legenda{
+	padding: 10px;
+    font-style: italic;
+    font-size: 14px;
+}
+.tecnologia {
+    width: 300px;
+}
+.tecnologia img{
+     width:  50%;
+    height: 50%;
+    padding: 20px;
+}
+
+.nome {
+    font-weight: bold;
+}
+.texto{
+    text-align:     left;
+}
+
+.fonte{
+    font-size: 14px;
+}
+/*********** BEGIN - DIV SOBRE  ***********/
+
+/*********** BEGIN - Menu ***********/
+.menu ul {
+    margin: 0px;
+    float:right;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+
+.menu ul li a {
+    color: #8E929D;
+	display: inline;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+	color: #01ACE2;
+}
+
+/*********** END - Menu ***********/
+
+
+/*********** BEGIN - Banner ***********/
+.banner .descricao h1{
+    margin-bottom: -10px;
+    padding: 0px;
+
+}
+.logohtml{
+    margin-right: -60px;
+    padding: 0px;
+    float: right;
+
+}
+.banner p{
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+.banner:after, .banner:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.banner:before {
+	border-top-color: #FF4D4D;
+	border-width: 24px;
+	margin-left: -24px;
+}
+.banner{
+ 	position: relative;
+    color:  white ;
+    height: 300px;
+    background-color: #FF4D4D;
+}
+
+.descricao{
+   margin-top: 100px;
+}
+
+.logohtml img { 
+    width: 60%;
+    height: 60%;
+}
+/*********** END - Banner ***********/
+
+
+
+/*********** BEGIN - Tabela Preço ***********/
+.preco h1{
+    text-align: left;
+}
+.preco{
+    height: 600px;
+    background-color:#FAFAFA;
+    text-align: center;
+}
+.preco p{
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.colhtml button:hover {
+   background-color: white;
+   color: #FF4B1E;
+}
+.colcss button:hover {
+   background-color: white;
+   color: #01ACE2;
+}
+.coljs button:hover {
+   background-color: white;
+   color: #FFE001;
+}
+.tabela{
+    margin: 0px;
+    color:white;
+}
+.colhtml,.colcss,.coljs{
+    float: left;
+    display: inline;  
+}
+ .colhtml .rowhead{
+     margin: 0px;
+     padding: 20px;
+     background-color: #FF4B1E ;
+ }
+.colhtml{
+    margin: 0px;
+    background-color: #FF651F;
+}
+.colhtml .row,.coljs .row,.colcss .row{
+    padding: 20px;
+    height: 10px;
+    width: 250px;
+}
+.colcss .rowhead{
+     margin: 0px;
+     padding: 20px;
+     background-color: #0071BF  ;
+ }
+.colcss{
+    margin: 0px;
+    background-color: #01ACE2 ;
+}
+.rowhead p{
+     font-size: 12px;
+     margin: 0px;
+     padding: 0px;
+     text-align: center;
+}
+.coljs .rowhead {
+     margin: 0px;
+     padding: 20px;
+     background-color: #FDC800  ;
+ }
+.coljs{
+    margin: 0px;
+    background-color: #FFE001 ;
+}
+
+/*********** END - Tabela Preço ***********/
+
+/*********** BEGIN - Contato ***********/
+.contato2{
+    color: white;
+      height: auto;
+    background-color:#0071BF;
+}
+
+.contato2, .banner, .preco, .sobre{
+ padding: 40px 200px 60px 200px; 
+}
+
+.contato2 > form > p {
+    margin-bottom: 10px;
+}
+
+.contato2 > form > input,.contato2 > form > textarea {
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+
+.contato2 > form > input:focus, .contato2 > form > textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+.contato2 h1{
+    font-size: 35px;
+     font-weight: normal;
+}
+.contato2 p{
+     margin-bottom: 0px;
+    padding-bottom: 0px; 
+}
+.contato2 input{
+    height: 35px;
+    width: 350px;
+    margin-bottom: 20px;
+    background-color: #0065AB;
+    border-style: inset;
+    color: #01ACE2;
+}
+::-webkit-input-placeholder  { color:#01ACE2; }
+input:-moz-placeholder { color:#01ACE2; }
+.contato2 button:hover {
+   background-color: white;
+   color: #0071BF;
+}
+.contato2 textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: inset;
+    background-color: #0065AB ;
+    width: 350px;
+    color: #01ACE2;
+}
+/*********** END - Contato ***********/
