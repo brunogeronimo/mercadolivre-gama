@@ -1,3 +1,36 @@
+@font-face {
+    font-family: ubuntuBold;
+    src: url("/fonts/ubuntu-bold.ttf");
+}
+@font-face {
+    font-family: ubuntuBoldItalic;
+    src: url("/fonts/ubuntu-bolditalic.ttf");
+}
+@font-face {
+    font-family: ubuntuItalic;
+    src: url("/fonts/ubuntu-italic.ttf");
+}
+@font-face {
+    font-family: ubuntuLight;
+    src: url("/fonts/ubuntu-light.ttf");
+}
+@font-face {
+    font-family: ubuntuLightItalic;
+    src: url("/fonts/ubuntu-lightitalic.ttf");
+}
+@font-face {
+    font-family: ubuntuMedium;
+    src: url("/fonts/ubuntu-medium.ttf");
+}
+@font-face {
+    font-family: ubuntuMediumItalic;
+    src: url("/fonts/ubuntu-mediumitalic.ttf");
+}
+@font-face {
+    font-family: ubuntu;
+    src: url("/fonts/ubuntu-regular.ttf");
+}
+
 /* reset de margens */
 * {
   margin: 0;
@@ -12,8 +45,14 @@ body, html {
   word-wrap: break-word;
 }
 
-body h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
+  font-family: ubuntuBold;
   text-transform: uppercase;
+  color: #6F2FAD;
+}
+
+p{
+  font-family: ubuntu;
 }
 
 .services{
@@ -46,7 +85,7 @@ body h1, h2, h3, h4, h5, h6{
   text-align: center;
 }
 
-.meio h1{
+.meio h1, h2, h3, h4, h5, h6{
   text-align: center;
 }
 
@@ -69,6 +108,10 @@ body h1, h2, h3, h4, h5, h6{
   background-size: cover;
   overflow: hidden;
   color: #fff;
+}
+
+.image-center{
+  text-align: center;
 }
 
 .main-content{
@@ -138,9 +181,6 @@ footer {
 }
 
 /*********** BEGIN - Contato ***********/
-
-
-
 
 .contact {
 	padding: 30px;
