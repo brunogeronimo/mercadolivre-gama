@@ -82,7 +82,7 @@ p{
 .detailed{
   padding-left: 12em;
   padding-right: 12em;
-  text-align: center;
+  text-align: justify;
 }
 
 .meio h1, h2, h3, h4, h5, h6{
@@ -112,6 +112,10 @@ p{
 
 .image-center{
   text-align: center;
+}
+
+.template-image{
+  min-height: 700px;
 }
 
 .main-content{
