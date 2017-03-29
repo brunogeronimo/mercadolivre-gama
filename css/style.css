@@ -26,7 +26,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 .cut-line{
-  background: #000 url("/images/banner.png") center center no-repeat;
+  background: #000 url("../images/banner.png") center center no-repeat;
   min-height: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -64,7 +64,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 .cabeca {
-  background: #000 url("/images/banner.png") center center no-repeat;
+  background: #000 url("../images/banner.png") center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
@@ -99,7 +99,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 footer {
-  background: #000 url("/images/footer.png") center center no-repeat;
+  background: #000 url("../images/footer.png") center center no-repeat;
   min-height: 3em;
   background-attachment: fixed;
   background-size: cover;
@@ -136,3 +136,99 @@ footer {
 .thumbnail img {
   width: 300px;
 }
+
+/*********** BEGIN - Contato ***********/
+
+
+
+
+.contact {
+	padding: 30px;
+	max-width: 400px;
+	margin: auto;
+	box-shadow: 0px 0px 52px 0px rgba(0,0,0,0.2);
+	animation: fadeIn 1.5s cubic-bezier(0.19,1,0.22,1);
+}
+.contact::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.contact .grupo{
+	margin-bottom: 20px;
+}
+.contact .grupo > *{
+	display: block;
+}
+.contact .grupo label{
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 2px;
+	color: black;
+}
+.contact .grupo input, form .grupo select{
+	border: none;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	background: rgba(88, 174, 216, 0.9);
+	color: rgba(0,0,0);
+    padding: 18px 10px;
+    border-bottom: solid 3px rgba(255,255,255,0.2);
+    transition: all 0.4s cubic-bezier(0.19,1,0.22,1);
+}
+
+
+.contact .grupo input:focus{
+	border-color: blue;
+}
+.contact .grupo.erro input{
+	border-bottom-color: red;
+}
+.contact .grupo.valido input{
+	border-bottom-color: #88bd64;
+}
+
+.contact h2 {
+	text-align: ;
+	margin-bottom: 16px;
+	color: black;
+}
+
+.contact textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: inset;
+	font-size: 16px;
+	border-radius: 5px;
+    background-color: rgba(88, 174, 216, 0.9) ;
+	width: 350px;
+}
+
+
+
+.btn{
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+	height: 50px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	border: none;
+	font: auto;
+	font-size: 16px;
+	background: #58aed8;
+	opacity: 0.8;
+	transition: all 1s cubic-bezier(0.19,1,0.22,1);
+}
+.btn:hover{
+	opacity: 1;
+	/*transform: translateY(-2px);*/
+}
+form > .btn{
+	width: 100%;
+	height: 60px;
+	border-radius: 30px;
+}
+/*********** END - Contato ***********/

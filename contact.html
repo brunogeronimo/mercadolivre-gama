@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- JQuery 2.x min -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--  Font Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- My own stylesheets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  <title>VendaMaisOnline.com</title>
+</head>
+<body>
+  <main class="container-fluid main-content" >
+    <div class="cabeca">
+      <div class="logo">
+        <img class="img-responsive" src="images/logo.png" alt="">
+      </div>
+    </div>
+
+    <div class="meio">
+		<div class="contact">
+			<form  action="#" method="post">
+				<input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+				<input type="hidden" name="redirect" value="http:www.vendamais.online"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+				<input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+				<input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+	
+				<h2>Deixe aqui sua dúvida.</h2>
+				<div class="grupo">
+					<label for="campo1">Nome</label>
+					<input type="text" required="" id="campo1" name="nome" placeholder="Nome">
+				</div>
+				
+				<div class="grupo">
+					<label for="campo2">E-mail</label>
+					<input type="e-mail" required="" id="campo2" name="email" placeholder="E-mail">
+				</div>
+				
+				<div class="grupo">
+					<label for="campo3" placeholder="Mensagem">Telefone</label>
+					<input type="text" id="campo3" name="telefone" placeholder="Telefone">
+				</div>
+				
+				<div class="grupo">
+					<label for="campo6">Digite sua mensagem</label>
+					<textarea rows="10" col="20" name="mensagem" placeholder="Mensagem"></textarea>
+				</div>
+
+				<button class="btn btn-cadastrar" type="submit">ENVIAR</button>
+			</form>
+		</div>
+    </div>
+
+    <footer>
+        Copyright, 2017, Venda Mais Online, todos os direitos reservados.
+    </footer>
+
+  </main>
+</body>
+</html>
