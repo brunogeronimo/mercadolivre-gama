@@ -99,8 +99,12 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 footer {
-  background: #000 url(banner.png) center center no-repeat;
-  color: #FFF;
+  background: #000 url("/images/footer.png") center center no-repeat;
+  min-height: 3em;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
 }
 
 @media screen and (max-width: 1100px){
