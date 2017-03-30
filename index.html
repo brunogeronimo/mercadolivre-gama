@@ -12,21 +12,71 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- My own stylesheets -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen">
-  <title>VendaMaisOnline.com</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+  <meta property="og:image" content="http://vendamais.online:8110/images/banner_socialmedia.jpg" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-96395257-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <title>Venda Mais Online! Suba suas vendas no Mercado Livre!</title>
 </head>
 <body>
+
   <main class="container-fluid main-content" >
     <div class="cabeca">
       <div class="logo">
         <img class="img-responsive" src="/images/logo.png" alt="">
       </div>
     </div>
+    
+
+
+
+		<!-- nav é a tag do HTML para navbar (barra de navegacao) -->
+	<!-- As classes são padrões do bootstrap (todas podem ser alteradas)-->
+	<nav class="navbar navbar-default navbar-static-top  custom-navbar vendamais-navbar">
+		<div class="container">
+			<!-- Esta parte só exibirá no Mobile (quadrado com 3 riscos do menu) -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" 
+					data-toggle="collapse" data-target="#navbar">
+				<!-- A classe sr-only só é exibida em leitor de tela para que pessoas
+					com deficiencia visual entendam o que há na tela -->
+					<span class="sr-only">Menu de Navegação</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Itens da navbar -->
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+						<li><a href="#como-funciona">Como Funciona?</a></li>
+						<li><a href="#comparativo">Compare as nossas soluções</a></li>
+						<li><a href="http://blog.vendamais.online/" target="_blank">Leia o nosso blog!</a></li>
+						<li><a href="#contato">Entre em contato conosco!</a></li>
+				</ul>
+			</div><!-- fim .nav-collapse -->
+		</div><!-- fim .container -->
+	</nav>
+	
 
     <div class="meio">
-      <div class="detailed col-lg-12 col-sm-12 col-xs-12">
+      <div class="row" id="inicio">
+          <iframe class="youTubeVideo" src="https://www.youtube.com/embed/5QcTkW8LFuI" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="meio">
+      <div id="como-funciona" class="detailed col-lg-12 col-sm-12 col-xs-12">
         <h1>Como Funciona?</h1>
-        <p>Chega de anunciar seus produtos só com textos e imagens nada inspiradoras. O Vendas Mais Online traz a solução ideal para você melhorar a atratividade dos seus anúncios me Mercado Livre e ganhar muito mais confiabilidade para a sua loja. E o melhor de tudo isso? Você escolhe o modelo ideal e ele é <b>seu</b>! Isso mesmo, nada de mensalidade!</p>
+        <p>Chega de anunciar seus produtos só com textos e imagens nada inspiradoras. O Vendas Mais Online traz a solução ideal para você melhorar a atratividade dos seus anúncios no Mercado Livre e ganhar muito mais confiabilidade para a sua loja. E o melhor de tudo isso? Você escolhe o modelo ideal e ele é <b>seu</b>! Isso mesmo, nada de mensalidade!</p>
       </div>
       <div class="container">
         <div class="row">
@@ -35,35 +85,37 @@
               <img src="/images/texto.png" />
             </div>
             <h3>Personalize</h3>
-            <p>Selecione o plano que deseja a partir do nível de personalização que busca e a quantidade de recursos que deseja ter para a sua loja.</p>
+            <p>Você pode selecionar um modelo pronto dentro de nossa biblioteca ou se preferir podemos criar um para você, nós entramos em contato e fazemos o anúncio sob medida.</p>
           </div>
           <div class="services col-lg-3 col-sm-3 col-xs-12">
             <div class="thumbnail">
               <img src="/images/tela.png" />
             </div>
             <h3>Escolha</h3>
-            <p>Encontre em nossa biblioteca o modelo de template ideal para a sua loja e as cores que mais combinam com o seu tipo de produto.</p>
+            <p>Selecione o plano que deseja de acordo com o nível de personalização que deseja e se preferir</p>
           </div>
           <div class="services col-lg-3 col-sm-3 col-xs-12">
             <div class="thumbnail">
               <img src="/images/foguete.png" />
             </div>
             <h3>Publique</h3>
-            <p>Só exportar seu arquivo do seu template para sua página de publicação no Mercado Livre e pronto! Sua loja com muito mais visibilidade.</p>
+            <p>Após o contato, nós enviamos um e-mail com o seu template pronto para ser exportado para a sua loja.</p>
           </div>
         </div>
+        <p class="centralize-text">Pronto! Seu anúncio estará pronto para passar muito mais confiança e visibilidade!</p>
       </div>
       <div class="cut-line"></div>
       <div class="container">
         <div class="row">
-            <iframe class="youTubeVideo" src="https://www.youtube.com/embed/W3SeZLlRHw0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="cut-line"></div>
-      <div class="container">
-        <div class="row">
-            <h2>Compare as nossas soluções</h2>
+          <img class="img-responsive" src="/images/banner_promote.png">
+          <h2 id="comparativo">Compare as nossas soluções</h2>
+          <p>Compre agora e receba o seu template por e-mail! *</b></p>
           <div class="product col-lg-4 col-sm-4 col-xs-12">
+            <div class="template-image image-center">
+              <a href="/images/templates/sapatos.png" target="_blank">
+                <img src="/images/templates/sapatos.png">
+              </a>
+            </div>
             <h3>BASIC</h3>
             <div>
               <ul>
@@ -98,6 +150,11 @@
             </div>
           </div>
           <div class="product col-lg-4 col-sm-4 col-xs-12">
+            <div class="template-image image-center">
+                <a href="/images/templates/smartphone.png" target="_blank">
+                  <img src="/images/templates/smartphone.png">
+                </a>
+            </div>
             <h3>LIGHT</h3>
             <div>
               <ul>
@@ -132,10 +189,15 @@
             </div>
           </div>
           <div class="product col-lg-4 col-sm-4 col-xs-12">
+            <div class="template-image image-center">
+              <a href="/images/templates/carro.jpg" target="_blank">
+                <img src="/images/templates/carro.jpg">
+              </a>
+            </div>
             <h3>PREMIUM</h3>
             <div>
               <ul>
-                <li>Layouts feitos sob medida para a sua empresa;</li>
+                <li>Layouts feitos sob medida para a sua empresa (você escolhe, nós fazemos);</li>
                 <li>Desing exclusivo com a identidade da sua marca;</li>
                 <li>Atratividade especial para sua loja;</li>
                 <li>Você solicita o serviço e confeccionamos ele especialmente para sua loja;</li>
@@ -167,13 +229,29 @@
               </div>
             </div>
           </div>
+          <p class="justify-text">Os pagamentos são feitos através do PayPal ou PagSeguro, garantindo assim segurança total nas transações.
+Em todos os planos, a entrega será feita para o e-mail cadastrado nas plataformas de pagamento. Para os planos <b>basic</b> e <b>light</b>, a entrega será feita em até 24h úteis após a confirmação de pagamento do banco. Para o plano <b>premium</b>, o prazo para a confecção do seu template exclusivo é de 48h úteis após a confirmação de pagamentos. Em alguns casos será necessário obter mais informações após a compra a respeito da temática do anúncio para desenvolver o template premium devido ao tamanho da personalização. Nesses casos, o prazo de 48h passará a contar somente <b>após</b> o envio das informações por parte do cliente.
+No caso dos clientes <b>light</b> e <b>premium</b>, entraremos em contato (através de e-mail ou telefone) para o repasse das informações necessárias para a personalização.</p>
         </div>
       </div>
-    </div>
+      <div class="footer-blog-info">
+        <div class="container">
+              <a href="http://blog.vendamais.online" target="_blank">Conheça também o nosso blog!</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="container" id="contato">
+          <div>
+            <a href="mailto:contato@vendamais.online" target="_blank">contato@vendamais.online</a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/vendamaisonline" target="_blank">facebook.com/vendamaisonline</a>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-        Copyright, 2017, Venda Mais Online, todos os direitos reservados.
-    </footer>
+
+    </div>
 
   </main>
 </body>

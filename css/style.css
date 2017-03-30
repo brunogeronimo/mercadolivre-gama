@@ -1,3 +1,36 @@
+@font-face {
+    font-family: ubuntuBold;
+    src: url("/fonts/ubuntu-bold.ttf");
+}
+@font-face {
+    font-family: ubuntuBoldItalic;
+    src: url("/fonts/ubuntu-bolditalic.ttf");
+}
+@font-face {
+    font-family: ubuntuItalic;
+    src: url("/fonts/ubuntu-italic.ttf");
+}
+@font-face {
+    font-family: ubuntuLight;
+    src: url("/fonts/ubuntu-light.ttf");
+}
+@font-face {
+    font-family: ubuntuLightItalic;
+    src: url("/fonts/ubuntu-lightitalic.ttf");
+}
+@font-face {
+    font-family: ubuntuMedium;
+    src: url("/fonts/ubuntu-medium.ttf");
+}
+@font-face {
+    font-family: ubuntuMediumItalic;
+    src: url("/fonts/ubuntu-mediumitalic.ttf");
+}
+@font-face {
+    font-family: ubuntu;
+    src: url("/fonts/ubuntu-regular.ttf");
+}
+
 /* reset de margens */
 * {
   margin: 0;
@@ -12,12 +45,22 @@ body, html {
   word-wrap: break-word;
 }
 
-body h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
+  font-family: ubuntuBold;
   text-transform: uppercase;
+  color: #6F2FAD;
+}
+
+p{
+  font-family: ubuntu;
 }
 
 .services{
   margin-right: 6em;
+}
+
+.services h1, h2, h3, h4, h5, h6{
+  color: #66cbd0;
 }
 
 .row{
@@ -26,7 +69,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 .cut-line{
-  background: #000 url("./images/banner.png") center center no-repeat;
+  background: #000 url("/images/banner.png") center center no-repeat;
   min-height: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -43,10 +86,10 @@ body h1, h2, h3, h4, h5, h6{
 .detailed{
   padding-left: 12em;
   padding-right: 12em;
-  text-align: center;
+  text-align: justify;
 }
 
-.meio h1{
+.meio h1, h2, h3, h4, h5, h6{
   text-align: center;
 }
 
@@ -63,12 +106,32 @@ body h1, h2, h3, h4, h5, h6{
   border: 0em;
 }
 
+.centralize-text{
+  text-align: center;
+}
+
+.justify-text{
+  text-align: justify;
+}
+
+.custom-navbar{
+  margin-bottom: 0px;
+}
+
 .cabeca {
-  background: #000 url("./images/banner.png") center center no-repeat;
+  background: #000 url("/images/banner.png") center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
   color: #fff;
+}
+
+.image-center{
+  text-align: center;
+}
+
+.template-image{
+  min-height: 700px;
 }
 
 .main-content{
@@ -98,13 +161,57 @@ body h1, h2, h3, h4, h5, h6{
   width: 100%;
 }
 
-footer {
-  background: #000 url("./images/footer.png") center center no-repeat;
-  min-height: 3em;
+.footer-blog-info {
+  background: #000 url("/images/footer.png") center center no-repeat;
+  min-height: 15em;
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
   color: #fff;
+}
+
+.footer-blog-info .footer-content{
+  margin-left: 30%;
+  margin-top: 6%;
+}
+
+.footer-blog-info .container{
+  margin-top: 6em;
+  text-align: center;
+}
+
+.footer-contact .container{
+  text-align: center;
+}
+
+.footer-contact .container, .footer-contact{
+  background: #6F2FAD;
+  min-height: 7em;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
+}
+
+.footer-blog-info a, .footer-contact a{
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #e2dd5b;
+  font-family: ubuntuBold;
+  text-transform: uppercase;
+}
+
+.vendamais-navbar{
+  background-color: #6f31ac;
+}
+
+.vendamais-navbar .navbar-nav > li > a {
+  color: #d6f14b;
+}
+
+a>  .navbar-brand {
+  color: #d6f14b;
+
 }
 
 @media screen and (max-width: 1100px){
@@ -139,9 +246,6 @@ footer {
 
 /*********** BEGIN - Contato ***********/
 
-
-
-
 .contact {
 	padding: 30px;
 	max-width: 400px;
@@ -174,6 +278,7 @@ footer {
 	padding: 10px;
 	font-size: 16px;
 	background: rgba(88, 174, 216, 0.9);
+	font-weight: bold;
 	color: rgba(0,0,0);
     padding: 18px 10px;
     border-bottom: solid 3px rgba(255,255,255,0.2);
@@ -202,6 +307,7 @@ footer {
     border-style: inset;
 	font-size: 16px;
 	border-radius: 5px;
+	font-weight: bold;
     background-color: rgba(88, 174, 216, 0.9) ;
 	width: 350px;
 }
@@ -218,6 +324,7 @@ footer {
 	border: none;
 	font: auto;
 	font-size: 16px;
+	font-weight: bold;
 	background: #58aed8;
 	opacity: 0.8;
 	transition: all 1s cubic-bezier(0.19,1,0.22,1);
