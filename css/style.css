@@ -106,6 +106,18 @@ p{
   border: 0em;
 }
 
+.centralize-text{
+  text-align: center;
+}
+
+.justify-text{
+  text-align: justify;
+}
+
+.custom-navbar{
+  margin-bottom: 0px;
+}
+
 .cabeca {
   background: #000 url("/images/banner.png") center center no-repeat;
   background-attachment: fixed;
@@ -149,13 +161,52 @@ p{
   width: 100%;
 }
 
-footer {
+.footer-blog-info {
   background: #000 url("/images/footer.png") center center no-repeat;
-  min-height: 3em;
+  min-height: 15em;
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
   color: #fff;
+}
+
+.footer-blog-info .footer-content{
+  margin-left: 30%;
+  margin-top: 6%;
+}
+
+.footer-blog-info .container{
+  margin-top: 6em;
+  text-align: center;
+}
+
+.footer-contact .container{
+  text-align: center;
+}
+
+.footer-contact .container, .footer-contact{
+  background: #6F2FAD;
+  min-height: 7em;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
+}
+
+.footer-blog-info a, .footer-contact a{
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #e2dd5b;
+  font-family: ubuntuBold;
+  text-transform: uppercase;
+}
+
+.vendamais-navbar{
+  background-color: #6f31ac;
+}
+
+.vendamais-navbar .navbar-nav > li > a {
+  color: #d6f14b;
 }
 
 @media screen and (max-width: 1100px){
