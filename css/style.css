@@ -164,6 +164,8 @@ p{
 .footer-blog-info {
   background: #000 url("/images/footer.png") center center no-repeat;
   min-height: 15em;
+<<<<<<< HEAD
+=======
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
@@ -187,12 +189,39 @@ p{
 .footer-contact .container, .footer-contact{
   background: #6F2FAD;
   min-height: 7em;
+>>>>>>> b2eb5e1a3ad0aecb4a5c86bba3835cca0964bc9e
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
   color: #fff;
 }
 
+<<<<<<< HEAD
+.footer-blog-info .footer-content{
+  margin-left: 30%;
+  margin-top: 6%;
+}
+
+.footer-blog-info .container{
+  margin-top: 6em;
+  text-align: center;
+}
+
+.footer-contact .container{
+  text-align: center;
+}
+
+.footer-contact .container, .footer-contact{
+  background: #6F2FAD;
+  min-height: 7em;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
+}
+
+=======
+>>>>>>> b2eb5e1a3ad0aecb4a5c86bba3835cca0964bc9e
 .footer-blog-info a, .footer-contact a{
   font-size: 2em;
   text-transform: uppercase;
@@ -209,11 +238,14 @@ p{
   color: #d6f14b;
 }
 
+<<<<<<< HEAD
 a>  .navbar-brand {
   color: #d6f14b;
 
 }
 
+=======
+>>>>>>> b2eb5e1a3ad0aecb4a5c86bba3835cca0964bc9e
 @media screen and (max-width: 1100px){
   .services{
     margin-right: 5em;
