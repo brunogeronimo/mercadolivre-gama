@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- My own stylesheets -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen">
   <meta property="og:image" content="http://vendamais.online:8110/images/banner_socialmedia.jpg" />
   <script>
@@ -27,6 +28,7 @@
   <title>Venda Mais Online! Suba suas vendas no Mercado Livre!</title>
 </head>
 <body>
+
   <main class="container-fluid main-content" >
     <div class="cabeca">
       <div class="logo">
@@ -34,23 +36,45 @@
       </div>
     </div>
     
-    
+
+
+
+		<!-- nav é a tag do HTML para navbar (barra de navegacao) -->
+	<!-- As classes são padrões do bootstrap (todas podem ser alteradas)-->
+	<nav class="navbar navbar-default navbar-static-top  custom-navbar vendamais-navbar">
+		<div class="container">
+			<!-- Esta parte só exibirá no Mobile (quadrado com 3 riscos do menu) -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" 
+					data-toggle="collapse" data-target="#navbar">
+				<!-- A classe sr-only só é exibida em leitor de tela para que pessoas
+					com deficiencia visual entendam o que há na tela -->
+					<span class="sr-only">Menu de Navegação</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Itens da navbar -->
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+						<li><a href="#como-funciona">Como Funciona?</a></li>
+						<li><a href="#comparativo">Compare as nossas soluções</a></li>
+						<li><a href="http://blog.vendamais.online/" target="_blank">Leia o nosso blog!</a></li>
+						<li><a href="#contato">Entre em contato conosco!</a></li>
+				</ul>
+			</div><!-- fim .nav-collapse -->
+		</div><!-- fim .container -->
+	</nav>
+	
 
     <div class="meio">
-      <div class="row" id="inicio">
-          <iframe class="youTubeVideo" src="https://www.youtube.com/embed/5QcTkW8LFuI" frameborder="0" allowfullscreen></iframe>
-      </div>
+		<div class="row" id="inicio">
+			<iframe class="youTubeVideo" src="https://www.youtube.com/embed/5QcTkW8LFuI" frameborder="0" allowfullscreen></iframe>
+		</div>
     </div>
-    <nav class="navbar navbar-default custom-navbar vendamais-navbar">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li><a href="#como-funciona">Como Funciona?</a></li>
-          <li><a href="#comparativo">Compare as nossas soluções</a></li>
-          <li><a href="http://blog.vendamais.online/" target="_blank">Leia o nosso blog!</a></li>
-          <li><a href="#contato">Entre em contato conosco!</a></li>
-        </ul>
-      </div>
-    </nav>
+
+
     <div class="meio">
       <div id="como-funciona" class="detailed col-lg-12 col-sm-12 col-xs-12">
         <h1>Como Funciona?</h1>
@@ -225,6 +249,10 @@ No caso dos clientes <b>light</b> e <b>premium</b>, entraremos em contato (atrav
           <div>
             <a href="https://www.facebook.com/vendamaisonline" target="_blank">facebook.com/vendamaisonline</a>
           </div>
+        </div>
+      </div>
+
+
         </div>
       </div>
 
