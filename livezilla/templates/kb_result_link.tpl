@@ -1,1 +1,0 @@
-<li class="lz_chat_kb_link"><a style="color:<!--color-->;" href="<!--link-->" target="_blank"><!--title--></a></li>
